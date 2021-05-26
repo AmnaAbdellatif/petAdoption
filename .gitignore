@@ -1,5 +1,3 @@
-jwt/
-.env
 migrations/
 ###> symfony/framework-bundle ###
 /.env.local
