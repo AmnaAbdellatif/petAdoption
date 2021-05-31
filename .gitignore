@@ -1,5 +1,4 @@
-
-
+migrations/
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -10,11 +9,6 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-###> symfony/phpunit-bridge ###
-.phpunit
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+###> symfony/web-server-bundle ###
+/.web-server-pid
 
-# Default ignored files
-/workspace.xml

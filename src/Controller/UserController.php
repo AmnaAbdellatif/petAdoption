@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\ClientRepository;
+use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -34,5 +35,6 @@ class UserController extends AbstractController
             'idClient' => $client->getId(),
         ]);
     }
+
 
 }

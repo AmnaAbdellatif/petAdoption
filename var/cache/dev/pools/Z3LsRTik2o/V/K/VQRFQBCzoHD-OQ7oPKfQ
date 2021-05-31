@@ -1,3 +1,0 @@
-<?php //route_name_07b1b61c380bd883eefce518d9f3b43c
-
-return [PHP_INT_MAX, 'api_veterinaries_get_collection'];

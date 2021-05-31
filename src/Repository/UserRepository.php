@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -35,7 +36,22 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->_em->persist($user);
         $this->_em->flush();
     }
+    /**
+     * @Route("/api/delete/{id}")
+     * @Method("DELETE")
+     */
+    public function deleteUserAction(User $user) : Response
+    {
+        if (!$user) {
+            throw $this->createNotFoundException('No guest found');
+        }
 
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->remove($user);
+        $em->flush();
+        return new Response(null, 204);
+
+    }
     // /**
     //  * @return User[] Returns an array of User objects
     //  */

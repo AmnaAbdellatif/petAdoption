@@ -1,4 +1,4 @@
-# Adoption Portal Documentation 
+# House Renting Portal Documentation 
 bellow is the documentation for the apis included in House Renting portal backend.
 
 ### General Information
@@ -45,7 +45,8 @@ body : {
 }
 
 ### available APIs
-registration, login, users, veterinaries.
+appartements, categories, clients, commentaires, contacts, garages, maisons, photos, proprietaires, studios, terrains, 
+
 #### Get All
 Path: /api/{api_name}
 

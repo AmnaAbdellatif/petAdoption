@@ -1,3 +1,0 @@
-<?php //App%255CController%255CAdmin%255CDashboardController%2523configureDashboard
-
-return [PHP_INT_MAX, []];

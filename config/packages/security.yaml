@@ -1,5 +1,4 @@
 security:
-
     encoders:
         App\Entity\User:
             algorithm: auto
@@ -9,17 +8,14 @@ security:
             entity:
                 class: App\Entity\User
                 property: username
-
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-
         login:
             pattern: ^/api/login
             stateless: true
             anonymous: true
-
             json_login:
                 check_path: /api/login
                 success_handler: lexik_jwt_authentication.handler.authentication_success
@@ -52,4 +48,4 @@ security:
        - { path: ^/verify, roles: IS_AUTHENTICATED_ANONYMOUSLY }
        - { path: ^/api/token/refresh, roles: IS_AUTHENTICATED_ANONYMOUSLY }
        - { path: ^/admin, roles: ROLE_ADMIN }
-       - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+

@@ -1,3 +1,0 @@
-<?php //EasyCorp%255CBundle%255CEasyAdminBundle%255CController%255CAbstractDashboardController%2523configureUserMenu
-
-return [PHP_INT_MAX, []];
