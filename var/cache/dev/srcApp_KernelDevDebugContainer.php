@@ -7,6 +7,11 @@ if (\class_exists(\ContainerHdrHasl\srcApp_KernelDevDebugContainer::class, false
 } elseif (!include __DIR__.'/ContainerHdrHasl/srcApp_KernelDevDebugContainer.php') {
     touch(__DIR__.'/ContainerHdrHasl.legacy');
 
+if (\class_exists(\Container8yrI19m\srcApp_KernelDevDebugContainer::class, false)) {
+    // no-op
+} elseif (!include __DIR__.'/Container8yrI19m/srcApp_KernelDevDebugContainer.php') {
+    touch(__DIR__.'/Container8yrI19m.legacy');
+
     return;
 }
 
@@ -19,3 +24,11 @@ return new \ContainerHdrHasl\srcApp_KernelDevDebugContainer([
     'container.build_id' => '55e614c5',
     'container.build_time' => 1622455613,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerHdrHasl');
+    \class_alias(\Container8yrI19m\srcApp_KernelDevDebugContainer::class, srcApp_KernelDevDebugContainer::class, false);
+}
+
+return new \Container8yrI19m\srcApp_KernelDevDebugContainer([
+    'container.build_hash' => '8yrI19m',
+    'container.build_id' => 'e474d771',
+    'container.build_time' => 1622284120,
+], __DIR__.\DIRECTORY_SEPARATOR.'Container8yrI19m');

@@ -90,6 +90,7 @@ class RegistrationController extends AbstractFOSRestController
         $user->setAddress($address);
         $user->setService($service);
         $user->setImage($image);
+
         $user->setPassword(
             $this->passwordEncoder->encodePassword($user, $password)
         );
