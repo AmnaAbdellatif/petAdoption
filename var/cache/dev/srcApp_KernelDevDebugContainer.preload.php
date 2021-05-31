@@ -10,6 +10,8 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).''.\DIRECTORY_SEPARATOR.'vendor/autoload.php';
+require __DIR__.'/ContainerHdrHasl/srcApp_KernelDevDebugContainer.php';
+
 require __DIR__.'/Container8yrI19m/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
@@ -53,6 +55,8 @@ $classes[] = 'App\Form\PhotoType';
 $classes[] = 'App\Listeners\AuthenticationSuccessListener';
 $classes[] = 'App\Listeners\RefreshTokenListener';
 $classes[] = 'App\Listeners\RequestListener';
+$classes[] = 'App\Repository\AdoptionRepository';
+
 $classes[] = 'App\Repository\AdresseRepository';
 $classes[] = 'App\Repository\AppartementRepository';
 $classes[] = 'App\Repository\CategorieRepository';
@@ -63,12 +67,19 @@ $classes[] = 'App\Repository\ContratRepository';
 $classes[] = 'App\Repository\GarageRepository';
 $classes[] = 'App\Repository\LogementRepository';
 $classes[] = 'App\Repository\MaisonRepository';
+$classes[] = 'App\Repository\PetRepository';
+$classes[] = 'App\Repository\PhotoRepository';
+$classes[] = 'App\Repository\PostvetoRepository';
+
 $classes[] = 'App\Repository\PhotoRepository';
 $classes[] = 'App\Repository\ProprietaireRepository';
 $classes[] = 'App\Repository\RatingRepository';
 $classes[] = 'App\Repository\StudioRepository';
 $classes[] = 'App\Repository\TerrainRepository';
 $classes[] = 'App\Repository\UserRepository';
+$classes[] = 'App\Repository\VeterinaryRepository';
+$classes[] = 'App\Repository\WishRepository';
+
 $classes[] = 'App\Repository\VeterinariesRepository';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Dbal\ManagerRegistryAwareConnectionProvider';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Registry';
