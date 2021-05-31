@@ -1,6 +1,7 @@
 {
     "type": "project",
     "license": "proprietary",
+
     "require": {
         "php": ">=7.1.3",
         "ext-ctype": "*",
@@ -62,6 +63,7 @@
         }
     },
     "replace": {
+
         "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
@@ -87,7 +89,9 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.4.*"
+
+            "require": "5.2.*"
+
         }
     }
 }

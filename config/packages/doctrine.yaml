@@ -1,5 +1,6 @@
 doctrine:
     dbal:
+
         url: '%env(resolve:DATABASE_URL)%'
         driver: 'pdo_pgsql'
         charset: utf8
