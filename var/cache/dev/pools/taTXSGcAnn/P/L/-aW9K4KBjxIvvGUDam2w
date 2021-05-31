@@ -1,0 +1,21 @@
+<?php //Gesdinet%255CJWTRefreshTokenBundle%255CEntity%255CAbstractRefreshToken%2524username
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'groups' => [
+                [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];
