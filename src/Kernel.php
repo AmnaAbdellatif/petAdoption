@@ -7,9 +7,11 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
+
 class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
+
 
     protected function configureContainer(ContainerConfigurator $container): void
     {
@@ -34,5 +36,6 @@ class Kernel extends BaseKernel
         } elseif (is_file($path = \dirname(__DIR__).'/config/routes.php')) {
             (require $path)($routes->withPath($path), $this);
         }
+
     }
 }

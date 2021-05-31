@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CTerrain%2523getRatings
+
+return [PHP_INT_MAX, []];
