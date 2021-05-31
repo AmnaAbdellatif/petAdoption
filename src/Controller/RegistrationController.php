@@ -55,8 +55,19 @@ class RegistrationController extends AbstractFOSRestController
     {
         $data = json_decode($request->getContent(), true);
 
+
         $username = $data["username"];
         $password = $data["password"];
+
+        $lastname = $data["lastname"];
+        $phone = $data["phone"];
+        $email = $data["email"];
+        $address = $data["address"];
+        $service = $data["service"];
+        $image = $data["image"];
+
+
+
 
 
         $user = $this->userRepository->findOneBy([
@@ -72,6 +83,13 @@ class RegistrationController extends AbstractFOSRestController
         $user = new User();
 
         $user->setUsername($username);
+        $user->setLastname($lastname);
+
+        $user->setPhone($phone);
+        $user->setEmail($email);
+        $user->setAddress($address);
+        $user->setService($service);
+        $user->setImage($image);
         $user->setPassword(
             $this->passwordEncoder->encodePassword($user, $password)
         );
