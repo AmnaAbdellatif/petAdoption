@@ -1,5 +1,5 @@
-# House Renting Portal Documentation 
-bellow is the documentation for the apis included in House Renting portal backend.
+# Pet Adoption Portal Documentation 
+bellow is the documentation for the apis included in Pet Adoption portal backend.
 
 ### General Information
 Authentication mechanism: JWT
@@ -45,7 +45,7 @@ body : {
 }
 
 ### available APIs
-appartements, categories, clients, commentaires, contacts, garages, maisons, photos, proprietaires, studios, terrains, 
+veterinaries, users.
 
 #### Get All
 Path: /api/{api_name}
